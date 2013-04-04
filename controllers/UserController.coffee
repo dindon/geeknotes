@@ -1,9 +1,7 @@
 exports.login = (req, res) ->
 	form = app.forms.user.LoginForm.LoginForm
 	form.fields._csrf.value = req.session._csrf
-	console.log req.session._csrf
 	res.render 'user/login',
-		title: 'Identification'
 		errors: req.flash 'error'
 		user: req.user
 		form: form
@@ -12,7 +10,6 @@ exports.registration = (req, res) ->
 	form = app.forms.user.RegistrationForm.RegistrationForm
 	form.fields._csrf.value = req.session._csrf
 	res.render 'user/registration',
-		title: 'Inscription'
 		form: form
 
 exports.create = (req, res) ->
@@ -24,7 +21,6 @@ exports.create = (req, res) ->
 			user.save (err) -> res.redirect '/identification'
 		other: (form) ->
 			res.render 'user/registration',
-				title: 'Inscription'
 				form: form
 
 exports.validAccount = (req, res) ->

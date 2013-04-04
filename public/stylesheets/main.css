@@ -14,7 +14,7 @@ input,textarea,select,*{font-family:'Raleway',sans-serif}
 #container-head .span12{padding:0 10px 0 10px}
 .navbar .btn-navbar{padding:0 15px 0 15px;height:32px;background:inherit;margin:3px 0 0 0;background-color:#222;font-size:23px;line-height:30px}
 .navbar .btn-navbar:hover,.navbar .btn-navbar:active,.navbar .btn-navbar.active,.navbar .btn-navbar.disabled,.navbar .btn-navbar[disabled]{background-color:#111}
-#logo{display:block;background-image:url("../images/layout/logo.png");width:282px;height:109px;margin:auto;margin-top:10px;margin-bottom:10px}
+#logo{display:block;background-image:url("../images/layout/logo.png");width:282px;height:109px;margin:auto;margin-top:10px;margin-bottom:20px}
 .logo-txt{font-family:'Lobster',cursive;font-size:25px;line-height:36px;color:#fff;text-decoration:none;display:block;float:left;margin-right:10px;}
 .logo-txt:hover{color:#fff;text-decoration:none}
 .navbar .nav > li > a:focus,.navbar .nav > li > a:hover{color:#fff}
@@ -24,7 +24,9 @@ input,textarea,select,*{font-family:'Raleway',sans-serif}
 .dropdown-menu a{font-family:'Raleway',sans-serif}
 .dropdown-menu li > a:hover,.dropdown-menu li > a:focus,.dropdown-submenu:hover > a{background-image:inherit;background-color:#69a4d2}
 @media (max-width: 979px){.nav-collapse .nav > li > a:hover,.nav-collapse .dropdown-menu a:hover{background-color:#222}
-}#nav-container{text-align:center;background-color:#fff;padding:10px;margin:0 0 20px 0;-webkit-box-shadow:0 1px 4px 0 rgba(0,0,0,0.2);-moz-box-shadow:0 1px 4px 0 rgba(0,0,0,0.2);box-shadow:0 1px 4px 0 rgba(0,0,0,0.2);-webkit-border-radius:30px;border-radius:30px}
+}.container-fluid{max-width:1400px;margin:auto}
+.body{background-color:#fff;padding:10px;margin:0 0 20px 0;-webkit-box-shadow:0 1px 4px 0 rgba(0,0,0,0.2);-moz-box-shadow:0 1px 4px 0 rgba(0,0,0,0.2);box-shadow:0 1px 4px 0 rgba(0,0,0,0.2);-webkit-border-radius:5px;border-radius:5px}
+#nav-container{text-align:center;background-color:#fff;padding:10px;margin:0 0 20px 0;-webkit-box-shadow:0 1px 4px 0 rgba(0,0,0,0.2);-moz-box-shadow:0 1px 4px 0 rgba(0,0,0,0.2);box-shadow:0 1px 4px 0 rgba(0,0,0,0.2);-webkit-border-radius:30px;border-radius:30px}
 @media screen and (max-width: 550px){#nav-container a img{width:13%;margin:0 2% 0 2%}
 #nav-container{-webkit-border-radius:20px;border-radius:20px}
 }@media screen and (min-width: 550px){#nav-container a{margin:0 10px 0 10px}
