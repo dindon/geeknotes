@@ -1,0 +1,28 @@
+div#container-head.navbar.row-fluid
+	div.span12
+		a.logo-txt(href="/") GeekNotes
+		button.btn.btn-navbar.collapsed(type="button", data-toggle="collapse", data-target=".nav-collapse") <span class="icon-reorder"></span>
+		div.nav-collapse.collapse
+			div.visible-tablet.visible-phone.row-fluid(style="margin: 10px 0 5px 0; width: 100%;")
+				div.span10
+					input.span12(type="text", placeholder="Rechercher...", name="find", style="")
+				div.span2
+					button.span12.btn.btn-inverse(type="submit", style="margin: 0px;")
+						span.icon-search
+
+			ul.nav
+				li <a href=""><span class="icon-lock"></span> Connexion</a>
+				li <a href=""><span class="icon-pencil"></span> Inscription</a>
+				li.dropdown
+					a#notes-dropdown.dropdown-toggle(href="#", role="button", data-toggle="dropdown") <span class="icon-book"></span> Notes
+					ul.dropdown-menu(role="menu", aria-labelledby="notes-dropdown")
+						li <a href=""><span class="icon-plus"></span> Créer une note</a></li>
+						li <a href=""><span class="icon-folder-open-alt"></span> Voir mes dossiers</a></li>
+						li <a href=""><span class="icon-file-alt"></span> Voir mes notes</a></li>
+						li.divider
+						li <a href=""><span class="icon-refresh"></span> Voir les notes publiques</a></li>
+
+		div.hidden-tablet.hidden-phone(style="float: right; margin: 7px 0 0 0;")
+			input(type="text", placeholder="Rechercher...", name="find", style="margin: 0px; height: 15px; line-height: 15px; font-size: 12px;")
+			button.btn.btn-inverse(type="submit", style="margin: 0 0 0 3px; height: 25px; line-height: 16px;")
+				span.icon-search

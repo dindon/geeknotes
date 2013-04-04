@@ -7,6 +7,9 @@ lib-cov
 *.pid
 *.gz
 
+config/parameters.coffee
+node_modules
+
 pids
 logs
 results

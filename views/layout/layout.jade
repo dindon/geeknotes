@@ -1,0 +1,25 @@
+doctype 5
+html
+	head
+		title= title
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		link(href='http://fonts.googleapis.com/css?family=Lobster|Raleway', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='/stylesheets/main.css')
+		link(rel='stylesheet', href='/library/font-awesome/css/font-awesome.css')
+		block css
+
+		script(type='text/javascript', src='/library/jquery/jquery.js')
+		script(type='text/javascript', src='/library/bootstrap-js/bootstrap.min.js')
+		block js
+	body
+		include mixins
+		include nav
+		div(style="width: 100%; height: 50px;")
+		a#logo(href='/')
+		div.container-fluid
+			div.row-fluid
+				div#nav-container.span12
+
+		block content
+		.ecart(style="height: 100px;")

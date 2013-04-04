@@ -1,0 +1,15 @@
+extends ../layout/layout
+block content
+	div.container
+		form(action="/inscription/traitement", method="post")
+			div.row-fluid
+				!= form.fields._csrf.widget.toHTML('_csrf', form.fields._csrf)
+				!= form.fields.username.widget.toHTML('username', form.fields.username)
+				mixin error(form.fields.username.error)
+				!= form.fields.email.widget.toHTML('email', form.fields.email)
+				mixin error(form.fields.email.error)
+			div.row-fluid
+				div.span6!= form.fields.password.widget.toHTML('password', form.fields.password)
+				div.span6!= form.fields.password_again.widget.toHTML('password_again', form.fields.password_again)
+			mixin error(form.fields.password.error)
+			input(type="submit", value="Inscription", class="btn btn-primary")

@@ -1,0 +1,12 @@
+extends ../layout/layout
+block content
+	if user
+		h1!=user.username
+	else
+		form(action="/identification/traitement", method="post")
+			each err in errors
+				mixin error(err)
+			!= form.fields._csrf.widget.toHTML('_csrf', form.fields._csrf)
+			!= form.fields.username.widget.toHTML('username', form.fields.username)
+			!= form.fields.password.widget.toHTML('password', form.fields.password)
+			input(type="submit", value="Envoyer", class="btn btn-primary")

@@ -1,0 +1,51 @@
+shadow(args...) //exemple : shadow 2px 2px 2px 0px rgba(0,0,0,.5)
+   -webkit-box-shadow args
+   -moz-box-shadow args
+   box-shadow args
+
+noshadow()
+	shadow 0 0 0 0 transparent
+	text-shadow 0 0 0 transparent
+
+round(args...) //exemple : round 10px
+	-webkit-border-radius args
+	border-radius args
+
+dotdotdot() //exemple : dotdotdot please
+	display block
+	-o-text-overflow ellipsis
+	text-overflow ellipsis
+	white-space nowrap
+	overflow hidden
+
+fadeTo(el, second, startopacity, endopa) //exemple : fadeTo("#fademeplease", .25s, 1, .5)
+	{el}
+		opacity startopacity
+		transition opacity second ease-in-out
+		-moz-transition opacity second ease-in-out
+		-webkit-transition opacity second ease-in-out
+	{el}:hover
+		opacity endopa
+
+//Hack twitter bootstrap
+.row-fluid .span12:nth-child(1n + 2)
+	margin-left 0px
+.row-fluid .span6:nth-child(2n + 3)
+	margin-left 0px
+.row-fluid .span4:nth-child(3n + 4)
+	margin-left 0px
+.row-fluid .span3:nth-child(4n + 5)
+	margin-left 0px
+.row-fluid .span2:nth-child(6n + 7)
+	margin-left 0px
+
+//Use own icons
+[class^="icon-"], [class*=" icon-"]
+	background-image inherit
+
+//Default configuration
+textarea
+	resize none
+
+.clear
+	clear both
